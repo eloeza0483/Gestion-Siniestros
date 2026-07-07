@@ -1,0 +1,33 @@
+@extends('layouts.app')
+
+@section('content')
+    <div class="flex flex-col items-center justify-center min-h-[calc(100vh-100px)] px-6 py-12">
+        <div
+            class="relative w-full max-w-lg text-center bg-white/40 dark:bg-gray-800/40 backdrop-blur-xl border border-white/20 dark:border-gray-700/50 shadow-2xl rounded-3xl p-10 overflow-hidden">
+
+            {{-- Efecto de luz interno --}}
+            <div
+                class="absolute top-0 left-1/2 transform -translate-x-1/2 w-3/4 h-32 bg-orange-500/20 blur-[50px] pointer-events-none">
+            </div>
+
+            <h1
+                class="text-9xl font-bold font-['Outfit'] text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-yellow-400 drop-shadow-sm relative z-10">
+                429
+            </h1>
+            <h2 class="text-3xl font-semibold text-gray-800 dark:text-gray-100 mt-4 font-['Outfit'] relative z-10">
+                Demasiadas peticiones
+            </h2>
+            <p class="text-gray-600 dark:text-gray-400 mt-2 text-lg relative z-10">
+                Has realizado demasiadas solicitudes en muy poco tiempo. Por favor, intenta de nuevo más tarde.
+            </p>
+
+            <div class="mt-8 relative z-10">
+                <a href="{{ url('/') }}"
+                    class="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white transition-all duration-300 bg-orange-600 hover:bg-orange-500 focus:ring-4 focus:ring-orange-300 dark:focus:ring-orange-800 shadow-lg shadow-orange-500/30 rounded-xl hover:-translate-y-1">
+                    <i class="fa-solid fa-house mr-2"></i>
+                    Volver al Inicio
+                </a>
+            </div>
+        </div>
+    </div>
+@endsection

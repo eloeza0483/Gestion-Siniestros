@@ -1,0 +1,24 @@
+{
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "vite build",
+        "dev": "vite",
+        "lint": "standard",           
+        "lint:fix": "standard --fix"
+    },
+    "devDependencies": {
+        "@tailwindcss/vite": "^4.1.12",
+        "axios": "^1.8.2",
+        "concurrently": "^9.0.1",
+        "laravel-vite-plugin": "^1.2.0",
+        "standard": "^17.1.2",
+        "tailwindcss": "^4.1.12",
+        "vite": "^6.3.5"
+    },
+    "dependencies": {
+        "datatables.net-dt": "^2.3.1",
+        "flowbite": "^3.1.2",
+        "imap": "^0.8.19"
+    }
+}

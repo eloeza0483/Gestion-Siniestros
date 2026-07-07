@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "standart": "^6.1.0"
+  },
+  "eslint":{
+    "extends": "standart"
+  }
+}

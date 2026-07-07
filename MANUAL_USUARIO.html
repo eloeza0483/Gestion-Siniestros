@@ -1,0 +1,421 @@
+﻿<!doctype html>
+<html lang='es'>
+<head>
+<meta charset='utf-8'>
+<title>Manual de Usuario</title>
+<style>
+body{font-family:Segoe UI,Arial,sans-serif;margin:40px;color:#111827;background:#fff}
+pre{white-space:pre-wrap;word-wrap:break-word;font-family:Segoe UI,Arial,sans-serif;font-size:12.5pt;line-height:1.6}
+</style>
+</head>
+<body>
+<pre># Manual de Usuario
+
+## Sistema Gesti&#243;n de Siniestros
+
+Este manual describe el uso general del sistema **Gesti&#243;n de Siniestros** con base en los m&#243;dulos visibles en la aplicaci&#243;n. Algunas opciones pueden cambiar seg&#250;n el **perfil activo** y los **permisos** asignados a cada usuario.
+
+## 1. Objetivo del sistema
+
+El sistema permite dar seguimiento al ciclo operativo de un siniestro, desde su registro hasta la gesti&#243;n de presupuestos, vales, entradas, albaranes, facturas, reportes y control administrativo.
+
+## 2. Acceso al sistema
+
+### Inicio de sesi&#243;n
+
+1. Ingrese a la pantalla de acceso.
+2. Capture su **usuario**.
+3. Capture su **contrase&#241;a**.
+4. Haga clic en **Acceder al sistema**.
+
+Si las credenciales son correctas, el sistema lo llevar&#225; a la pantalla principal.
+
+### Cierre de sesi&#243;n
+
+1. Haga clic en el &#237;cono de usuario ubicado en la parte superior derecha.
+2. Seleccione **Cerrar sesi&#243;n**.
+
+## 3. Selecci&#243;n de perfil
+
+Despu&#233;s de iniciar sesi&#243;n, el sistema puede mostrar uno o varios perfiles disponibles.
+
+Ejemplos de perfiles:
+
+- Talleres o &#225;reas operativas
+- Refacciones
+- Otros perfiles configurados por la empresa
+
+Para continuar:
+
+1. Seleccione el perfil con el que desea trabajar.
+2. El sistema abrir&#225; los m&#243;dulos disponibles para ese perfil.
+
+Importante:
+
+- El men&#250; cambia seg&#250;n el perfil activo.
+- Tambi&#233;n puede cambiar de perfil desde el men&#250; del usuario cuando tenga m&#225;s de uno asignado.
+
+## 4. Estructura general de la pantalla
+
+En la parte superior se encuentra la barra principal del sistema. Desde ah&#237; podr&#225; acceder a:
+
+- Siniestros
+- Presupuestos
+- Vales
+- Entradas
+- Albaranes
+- Facturas
+- Reportes
+- Proceso de veh&#237;culos
+- Seguimiento de trabajos
+- Administraci&#243;n
+
+Adem&#225;s, en la esquina superior derecha encontrar&#225;:
+
+- Usuario activo
+- Departamento
+- Cambio de perfil
+- Cierre de sesi&#243;n
+
+## 5. Consideraciones generales de uso
+
+En la mayor&#237;a de los m&#243;dulos encontrar&#225;:
+
+- Un campo de **b&#250;squeda**
+- Un bot&#243;n de **Filtros**
+- Una tabla con los registros
+- Acciones disponibles seg&#250;n permisos
+
+Recomendaciones:
+
+- Use la b&#250;squeda para localizar r&#225;pidamente un registro por n&#250;mero, nombre o dato relacionado.
+- Use los filtros para acotar resultados por estado.
+- Revise siempre el perfil activo antes de capturar informaci&#243;n.
+
+## 6. M&#243;dulo de Siniestros
+
+El m&#243;dulo **Siniestros** concentra el registro y consulta de casos.
+
+### Acciones principales
+
+- Consultar siniestros
+- Filtrar por estado
+- Crear siniestros
+- Cancelar siniestros
+- Reabrir siniestros
+- Cerrar siniestros
+- Notificar cancelaciones
+
+### Estados disponibles
+
+- Abiertos
+- Completados
+- Cerrados
+- Cancelados
+
+### Flujo b&#225;sico
+
+1. Entre al m&#243;dulo **Siniestros**.
+2. Revise la tabla de registros.
+3. Si tiene permisos, haga clic en **Crear siniestros** para registrar uno nuevo.
+4. Use filtros para consultar &#250;nicamente los casos del estado requerido.
+5. Abra el registro correspondiente para consultar su detalle o ejecutar acciones.
+
+### Configuraci&#243;n relacionada
+
+Dentro de este m&#243;dulo tambi&#233;n puede existir una opci&#243;n de **Configuraci&#243;n** para cat&#225;logos relacionados, como marcas u otros elementos de apoyo al registro.
+
+## 7. M&#243;dulo de Presupuestos
+
+El m&#243;dulo **Presupuestos** permite generar, consultar, cotizar y exportar presupuestos ligados a un siniestro.
+
+### Opciones principales
+
+- Crear presupuesto
+- Ver presupuestos
+- Cotizar presupuesto
+- Descargar presupuesto en Excel
+- Agregar vale desde un presupuesto
+- Enviar evidencias
+- Enviar correo de cotizaci&#243;n
+
+### Estados frecuentes
+
+- Pendiente
+- Sin cotizar
+- Cotizado
+- Cancelado
+
+### Flujo para crear un presupuesto
+
+1. Entre a **Presupuestos**.
+2. Seleccione **Crear**.
+3. Capture el **n&#250;mero de orden**.
+4. El sistema completar&#225; datos relacionados cuando existan:
+   - N&#250;mero de siniestro
+   - Cliente o aseguradora
+   - VIN
+   - Veh&#237;culo
+   - Marca
+   - Modelo
+5. Seleccione el **proveedor**, cuando aplique.
+6. Capture la informaci&#243;n econ&#243;mica o t&#233;cnica requerida.
+7. Guarde el registro.
+
+### Flujo para cotizar
+
+1. Entre a **Presupuestos**.
+2. Abra un presupuesto pendiente o sin cotizar.
+3. Capture los datos de cotizaci&#243;n.
+4. Adjunte evidencias si su rol lo permite.
+5. Env&#237;e la cotizaci&#243;n o genere el correo correspondiente.
+
+## 8. M&#243;dulo de Vales
+
+El m&#243;dulo **Vales** controla la emisi&#243;n y seguimiento de vales asociados a presupuestos.
+
+### Acciones principales
+
+- Consultar vales
+- Crear o agregar vale desde un presupuesto
+- Ver detalle del vale
+- Asignar entrada
+- Asignar albar&#225;n
+- Agregar complemento
+- Notificar creaci&#243;n de vale
+- Solicitar modificaci&#243;n de partes
+- Solicitar eliminaci&#243;n de partes
+- Cancelar vales
+- Exportar vale
+
+### Estados disponibles
+
+- Abierto
+- Completado
+- Cerrado
+- Cancelado
+
+### Flujo b&#225;sico
+
+1. Genere o abra un vale desde el presupuesto correspondiente.
+2. Revise las piezas disponibles.
+3. Asigne la **entrada** o el **albar&#225;n** cuando corresponda.
+4. Registre complementos si hacen falta piezas adicionales.
+5. Notifique a los responsables cuando el proceso lo requiera.
+
+## 9. M&#243;dulo de Entradas
+
+El m&#243;dulo **Entradas** permite revisar y administrar las entradas relacionadas con vales o piezas.
+
+### Acciones principales
+
+- Consultar entradas
+- Ver detalle de entrada
+- Consultar informaci&#243;n en W32
+- Notificar entrada asignada
+- Liberar partes
+- Notificar liberaci&#243;n de partes
+
+### Estados visibles
+
+- Abiertos
+- Cerrados
+- Cancelados
+
+### Flujo b&#225;sico
+
+1. Entre a **Entradas**.
+2. Busque el registro requerido.
+3. Abra el detalle para validar informaci&#243;n.
+4. Si aplica, libere partes o env&#237;e la notificaci&#243;n correspondiente.
+
+## 10. M&#243;dulo de Albaranes
+
+El m&#243;dulo **Albaranes** concentra la consulta y administraci&#243;n de albaranes vinculados al proceso.
+
+### Acciones principales
+
+- Consultar albaranes
+- Ver detalle
+- Consultar informaci&#243;n en W32
+- Notificar albar&#225;n asignado
+
+### Estados visibles
+
+- Abiertos
+- Cerrados
+- Facturados
+- Cancelados
+
+### Flujo b&#225;sico
+
+1. Entre a **Albaranes**.
+2. Use b&#250;squeda o filtros para localizar el albar&#225;n.
+3. Revise el detalle.
+4. Si corresponde, env&#237;e la notificaci&#243;n de asignaci&#243;n.
+
+## 11. M&#243;dulo de Facturas
+
+El m&#243;dulo **Facturas** sirve para consultar facturas registradas en el sistema.
+
+### Acciones principales
+
+- Consultar facturas
+- Buscar por datos del registro
+
+### Uso general
+
+1. Entre a **Facturas**.
+2. Use el campo de b&#250;squeda.
+3. Revise la tabla con la informaci&#243;n disponible.
+
+## 12. M&#243;dulo de Reportes
+
+El m&#243;dulo **Reportes** permite consultar informaci&#243;n consolidada por entidad y por rango de fechas.
+
+### Criterios disponibles
+
+- Entidad:
+  - Siniestros
+  - Presupuestos
+  - Vales
+  - Facturas
+  - Entradas
+- Fecha inicial
+- Fecha final
+- Tipo de registro:
+  - Registro
+  - Actualizaci&#243;n
+- Estado
+- Taller o perfil
+
+### Flujo b&#225;sico
+
+1. Entre a **Reportes**.
+2. Seleccione la entidad a consultar.
+3. Defina el rango de fechas.
+4. Indique el tipo de registro.
+5. Si lo requiere, filtre por estado o taller.
+6. Haga clic en el bot&#243;n de b&#250;squeda.
+7. Revise los resultados en la tabla.
+
+## 13. M&#243;dulo de Proceso de Veh&#237;culos
+
+Este m&#243;dulo permite dar seguimiento al estado operativo de los veh&#237;culos dentro del proceso.
+
+### Estados disponibles
+
+- Pendiente
+- En proceso
+- Pausado
+- Finalizado
+
+### Acciones principales
+
+- Consultar procesos
+- Buscar registros
+- Filtrar por estado
+- Cambiar estado del proceso, seg&#250;n permisos
+
+## 14. M&#243;dulo de Seguimiento de Trabajos
+
+Este m&#243;dulo facilita el seguimiento general de actividades o trabajos en curso.
+
+### Estados disponibles
+
+- Pendiente
+- En proceso
+- Pausado
+- Finalizado
+- Casos especiales
+
+### Uso general
+
+1. Entre a **Seguimiento de trabajos**.
+2. Use b&#250;squeda o filtros.
+3. Revise los trabajos activos y su estado actual.
+
+## 15. M&#243;dulo de Administraci&#243;n
+
+El m&#243;dulo **Administraci&#243;n** est&#225; orientado al control de permisos.
+
+### Funciones principales
+
+- Buscar usuario
+- Buscar rol
+- Asignar rol
+
+### Flujo b&#225;sico
+
+1. Entre a **Administraci&#243;n**.
+2. Capture el nombre o correo del usuario.
+3. Busque el rol que desea asignar.
+4. Haga clic en **Asignar Rol**.
+
+Importante:
+
+- Este m&#243;dulo debe ser utilizado &#250;nicamente por personal autorizado.
+
+## 16. Uso de filtros y b&#250;squedas
+
+En varios m&#243;dulos existe un bot&#243;n de **Filtros**. Su objetivo es mostrar &#250;nicamente los registros que cumplan una condici&#243;n, normalmente por **estado**.
+
+Recomendaciones:
+
+- Si no encuentra un registro, primero limpie los filtros.
+- Despu&#233;s use el campo de b&#250;squeda.
+- Finalmente verifique que est&#233; trabajando en el perfil correcto.
+
+## 17. Permisos y restricciones
+
+El sistema trabaja con permisos por usuario y por perfil. Por ello:
+
+- Algunos usuarios solo pueden consultar informaci&#243;n.
+- Otros pueden crear, editar, cotizar, cancelar o notificar.
+- No todos los m&#243;dulos aparecen para todos los usuarios.
+
+Si una opci&#243;n no est&#225; visible, es posible que su usuario no tenga autorizaci&#243;n para usarla.
+
+## 18. Buenas pr&#225;cticas
+
+- Verifique siempre el perfil activo antes de iniciar.
+- Capture correctamente n&#250;meros de orden, siniestro, vale y documentos relacionados.
+- Use filtros para evitar trabajar sobre registros incorrectos.
+- Antes de cerrar o cancelar un registro, confirme la informaci&#243;n.
+- Si una pantalla no responde como espera, recargue la consulta y valide los datos capturados.
+
+## 19. Soluci&#243;n b&#225;sica de problemas
+
+### No puedo entrar al sistema
+
+- Verifique usuario y contrase&#241;a.
+- Confirme que su cuenta siga activa.
+- Si el problema contin&#250;a, contacte a sistemas.
+
+### No veo un m&#243;dulo en el men&#250;
+
+- Revise el perfil activo.
+- Verifique si su usuario tiene permisos.
+
+### No encuentro un registro
+
+- Limpie filtros.
+- Use la b&#250;squeda.
+- Revise el estado del registro.
+- Verifique que est&#233; en el perfil correcto.
+
+### No puedo realizar una acci&#243;n
+
+- Es probable que su rol no tenga permisos.
+- Tambi&#233;n puede deberse al estado actual del registro.
+
+## 20. Soporte
+
+Si necesita apoyo:
+
+- Consulte a su responsable de &#225;rea.
+- Contacte al equipo de sistemas.
+- Reporte el m&#243;dulo, el n&#250;mero de registro y el problema detectado para una atenci&#243;n m&#225;s r&#225;pida.
+</pre>
+</body>
+</html>
